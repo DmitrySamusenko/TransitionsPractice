@@ -19,6 +19,9 @@
 		77344074298AEC0200783084 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77344073298AEC0200783084 /* LoginViewController.storyboard */; };
 		77344077298AEF5100783084 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77344076298AEF5100783084 /* TermsViewController.swift */; };
 		77344079298AEF5E00783084 /* TermsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77344078298AEF5E00783084 /* TermsViewController.storyboard */; };
+		7734407C298AF86800783084 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734407B298AF86800783084 /* AuthData.swift */; };
+		7734407F298B03F300783084 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734407E298B03F300783084 /* Router.swift */; };
+		77344081298B040200783084 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77344080298B040200783084 /* MainRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		77344073298AEC0200783084 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		77344076298AEF5100783084 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		77344078298AEF5E00783084 /* TermsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsViewController.storyboard; sourceTree = "<group>"; };
+		7734407B298AF86800783084 /* AuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
+		7734407E298B03F300783084 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		77344080298B040200783084 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,8 @@
 		77344052298AD2EE00783084 /* TransitionsPractice */ = {
 			isa = PBXGroup;
 			children = (
+				7734407D298B03E200783084 /* Router */,
+				7734407A298AF83400783084 /* Models */,
 				77344075298AEF3C00783084 /* Terms */,
 				77344070298AEBCF00783084 /* Login */,
 				7734406B298AE01C00783084 /* Demo */,
@@ -131,6 +139,23 @@
 				77344078298AEF5E00783084 /* TermsViewController.storyboard */,
 			);
 			path = Terms;
+			sourceTree = "<group>";
+		};
+		7734407A298AF83400783084 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7734407B298AF86800783084 /* AuthData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7734407D298B03E200783084 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7734407E298B03F300783084 /* Router.swift */,
+				77344080298B040200783084 /* MainRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,12 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7734407F298B03F300783084 /* Router.swift in Sources */,
 				77344058298AD2EE00783084 /* ViewController.swift in Sources */,
 				77344054298AD2EE00783084 /* AppDelegate.swift in Sources */,
 				77344056298AD2EE00783084 /* SceneDelegate.swift in Sources */,
+				7734407C298AF86800783084 /* AuthData.swift in Sources */,
 				77344072298AEBE400783084 /* LoginViewController.swift in Sources */,
 				77344077298AEF5100783084 /* TermsViewController.swift in Sources */,
 				7734406D298AE9EF00783084 /* DemoViewController.swift in Sources */,
+				77344081298B040200783084 /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

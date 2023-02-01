@@ -8,28 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private let router = Router.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
+    
     // MARK: - Actions
     @IBAction func didTapLoginButton() {
-        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        navigationController?.pushViewController(vc, animated: true)
+        let authData = AuthData(login: "Demetrius", password: "password123")
+        router.showLogin(fromViewController: self, authData: authData)
     }
     @IBAction func didTapDemoButton() {
-        let storyboard = UIStoryboard(name: "DemoViewController", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "DemoViewController") as! DemoViewController
-        present(vc, animated: true)
-        
+        router.showDemo(fromViewController: self, with: true)
         
     }
     @IBAction func didTapTermsButton() {
-        let storyboard = UIStoryboard(name: "TermsViewController", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "TermsViewController") as! TermsViewController
-        navigationController?.pushViewController(vc, animated: true)
+        router.showTerms(fromViewController: self, with: "RU")
     }
     
 }

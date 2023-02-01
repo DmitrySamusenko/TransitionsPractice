@@ -8,9 +8,15 @@
 import UIKit
 
 class DemoViewController: UIViewController {
-    // Mark: - Actions
-    
-    @IBAction func dismissTap() {
-        dismiss(animated: true)
+    // Mark: - Public
+    func configure(with shouldDisissAnimated: Bool) {
+        self.shouldDisissAnimated = shouldDisissAnimated
     }
+    
+    // Mark: - Actions
+    @IBAction func dismissTap() {
+        dismiss(animated: shouldDisissAnimated)
+    }
+    // Mark: - Private
+    private var shouldDisissAnimated = true
 }

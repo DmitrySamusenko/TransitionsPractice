@@ -30,6 +30,9 @@
                             <constraint firstItem="hy0-2H-C4e" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="nTt-bf-O48"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="agreementTitleLabel" destination="hy0-2H-C4e" id="cSs-Bz-apR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

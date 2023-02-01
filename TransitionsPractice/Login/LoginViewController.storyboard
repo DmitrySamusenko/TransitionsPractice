@@ -35,7 +35,7 @@
                                             <constraint firstAttribute="height" constant="36" id="b9b-c0-Zg6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -58,6 +58,10 @@
                             <constraint firstItem="ek2-41-C1T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="scH-xm-UMF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lgnField" destination="pyA-24-sZl" id="YxK-u1-P8d"/>
+                        <outlet property="pwField" destination="uFT-Jd-hu4" id="1C3-4c-bJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
