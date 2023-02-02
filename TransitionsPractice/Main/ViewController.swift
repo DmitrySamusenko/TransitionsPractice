@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let authData = AuthData(login: "Demetrius", password: "password123")
         router.showLogin(fromViewController: self, authData: authData)
     }
-    @IBAction func didTapDemoButton() {
+    @IBAction func didTapSettingsButton() {
         router.showDemo(fromViewController: self, with: true)
         
     }

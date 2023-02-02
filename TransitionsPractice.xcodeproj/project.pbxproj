@@ -13,8 +13,8 @@
 		7734405B298AD2EE00783084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77344059298AD2EE00783084 /* Main.storyboard */; };
 		7734405D298AD2F600783084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7734405C298AD2F600783084 /* Assets.xcassets */; };
 		77344060298AD2F600783084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7734405E298AD2F600783084 /* LaunchScreen.storyboard */; };
-		7734406D298AE9EF00783084 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734406C298AE9EF00783084 /* DemoViewController.swift */; };
-		7734406F298AEA2300783084 /* DemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7734406E298AEA2300783084 /* DemoViewController.storyboard */; };
+		7734406D298AE9EF00783084 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734406C298AE9EF00783084 /* SettingsViewController.swift */; };
+		7734406F298AEA2300783084 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7734406E298AEA2300783084 /* SettingsViewController.storyboard */; };
 		77344072298AEBE400783084 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77344071298AEBE400783084 /* LoginViewController.swift */; };
 		77344074298AEC0200783084 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77344073298AEC0200783084 /* LoginViewController.storyboard */; };
 		77344077298AEF5100783084 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77344076298AEF5100783084 /* TermsViewController.swift */; };
@@ -33,8 +33,8 @@
 		7734405C298AD2F600783084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7734405F298AD2F600783084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77344061298AD2F600783084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7734406C298AE9EF00783084 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		7734406E298AEA2300783084 /* DemoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoViewController.storyboard; sourceTree = "<group>"; };
+		7734406C298AE9EF00783084 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7734406E298AEA2300783084 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 		77344071298AEBE400783084 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		77344073298AEC0200783084 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		77344076298AEF5100783084 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 		7734406B298AE01C00783084 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				7734406C298AE9EF00783084 /* DemoViewController.swift */,
-				7734406E298AEA2300783084 /* DemoViewController.storyboard */,
+				7734406C298AE9EF00783084 /* SettingsViewController.swift */,
+				7734406E298AEA2300783084 /* SettingsViewController.storyboard */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7734406F298AEA2300783084 /* DemoViewController.storyboard in Resources */,
+				7734406F298AEA2300783084 /* SettingsViewController.storyboard in Resources */,
 				77344060298AD2F600783084 /* LaunchScreen.storyboard in Resources */,
 				77344074298AEC0200783084 /* LoginViewController.storyboard in Resources */,
 				7734405D298AD2F600783084 /* Assets.xcassets in Resources */,
@@ -239,7 +239,7 @@
 				7734407C298AF86800783084 /* AuthData.swift in Sources */,
 				77344072298AEBE400783084 /* LoginViewController.swift in Sources */,
 				77344077298AEF5100783084 /* TermsViewController.swift in Sources */,
-				7734406D298AE9EF00783084 /* DemoViewController.swift in Sources */,
+				7734406D298AE9EF00783084 /* SettingsViewController.swift in Sources */,
 				77344081298B040200783084 /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

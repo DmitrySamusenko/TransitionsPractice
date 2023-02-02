@@ -32,27 +32,29 @@
                                     <action selector="didTapTermsButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="j8J-0x-dal"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qil-LD-7ox">
-                                <rect key="frame" x="304" y="182" width="70" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Demo"/>
-                                <connections>
-                                    <action selector="didTapDemoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWc-VB-Z0C"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qil-LD-7ox" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="4ZL-bR-6AO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HJO-SL-z7T" secondAttribute="bottom" constant="99" id="Gbz-cN-HxY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MXm-fF-kNt" secondAttribute="bottom" constant="38" id="RnG-zW-Dqq"/>
                             <constraint firstItem="HJO-SL-z7T" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZrY-Fh-xpx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qil-LD-7ox" secondAttribute="trailing" constant="16" id="eWM-nC-fE9"/>
                             <constraint firstItem="MXm-fF-kNt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qj4-Pb-xUN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="HZm-8A-AbK"/>
+                    <navigationItem key="navigationItem" id="HZm-8A-AbK">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Rxb-XC-idp">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="qil-LD-7ox">
+                                <rect key="frame" x="287" y="4.6666666666666679" width="87" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Settings"/>
+                                <connections>
+                                    <action selector="didTapSettingsButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWc-VB-Z0C"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

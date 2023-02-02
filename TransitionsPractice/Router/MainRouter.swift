@@ -15,9 +15,8 @@ protocol MainRouter {
 
 extension Router: MainRouter {
     func showDemo(fromViewController: UIViewController, with: Bool) {
-        let storyboard = UIStoryboard(name: "DemoViewController", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "DemoViewController") as! DemoViewController
-        vc.configure(with: with)
+        let storyboard = UIStoryboard(name: "SettingsViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
         fromViewController.present(vc, animated: true)
     }
     
